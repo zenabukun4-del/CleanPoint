@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CleanPoint Sprzątanie</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5fbfa;
+    color: #17252b;
+}
+
+header {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 15px #00000015;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00a88f;
+}
+
+nav a {
+    text-decoration: none;
+    color: #17252b;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00a88f;
+}
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #dffaf5, #ffffff);
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00a88f;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #53636a;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #00a88f;
+    color: white;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #008c77;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.title p {
+    color: #68777d;
+}
+
+.services {
+    background: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+    border-radius: 15px;
+    background: #f5fbfa;
+    border: 1px solid #e0eeee;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px #00000012;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #617077;
+}
+
+.about {
+    background: #e5f8f4;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    color: #53636a;
+}
+
+.contact {
+    background: #17252b;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #cbd5d8;
+    margin-bottom: 30px;
+}
+
+.contact .button {
+    background: #00a88f;
+}
+
+footer {
+    background: #10191d;
+    color: #9ba8ac;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CleanPoint</div>
+
+    <nav>
+        <a href="#start">Start</a>
+        <a href="#uslugi">Usługi</a>
+        <a href="#onas">O nas</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<section class="hero" id="start">
+    <div class="hero-text">
+        <h1>
+            Czystość,<br>
+            <span>na której możesz polegać.</span>
+        </h1>
+
+        <p>
+            CleanPoint — profesjonalne sprzątanie mieszkań,
+            domów, biur i lokali.
+        </p>
+
+        <a href="#kontakt" class="button">
+            Zamów sprzątanie
+        </a>
+    </div>
+</section>
+
+<section class="services" id="uslugi">
+
+    <div class="title">
+        <h2>Nasze usługi</h2>
+        <p>Dbamy o każdy szczegół.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🏠</div>
+            <h3>Sprzątanie mieszkań</h3>
+            <p>
+                Dokładne sprzątanie mieszkań i domów.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏢</div>
+            <h3>Sprzątanie biur</h3>
+            <p>
+                Czyste i przyjemne miejsce pracy.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✨</div>
+            <h3>Sprzątanie dokładne</h3>
+            <p>
+                Dokładne czyszczenie wymagających powierzchni.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🪟</div>
+            <h3>Mycie okien</h3>
+            <p>
+                Czyste szyby bez smug.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧹</div>
+            <h3>Sprzątanie regularne</h3>
+            <p>
+                Regularne wizyty według ustalonego harmonogramu.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚚</div>
+            <h3>Sprzątanie po remoncie</h3>
+            <p>
+                Usuwamy kurz i zabrudzenia po remoncie.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="onas">
+
+    <div class="title">
+        <h2>Dlaczego CleanPoint?</h2>
+    </div>
+
+    <p>
+        Stawiamy na dokładność, punktualność i profesjonalną
+        obsługę. Sprzątamy tak, abyś mógł cieszyć się
+        czystym i świeżym miejscem.
+    </p>
+
+</section>
+
+<section class="contact" id="kontakt">
+
+    <h2>Skontaktuj się z nami</h2>
+
+    <p>
+        Potrzebujesz sprzątania? Zadzwoń lub napisz!
+    </p>
+
+    <a class="button" href="tel:792227351">
+        📞 792 227 351
+    </a>
+
+</section>
+
+<footer>
+    © 2026 CleanPoint Sprzątanie
+</footer>
+
+</body>
+</html>
+
